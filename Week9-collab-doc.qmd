@@ -13,3 +13,11 @@ library(lterdatasampler) #for data
 library(here) #for file paths 
 
 ```
+
+I'm reading in data here (edit later)
+
+```{r}
+
+data("pie_crab")
+
+```

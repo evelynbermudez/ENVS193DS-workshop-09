@@ -62,3 +62,9 @@ y-int: -3.62 +/- 1.27
 for each 1 degree increase in latitude, we expect crab size to increase by 0.485 +/- 0.034 mm.
 
 Model Statistics: F(1,390) = 208.5, p \< 0.001, alpha = 0.05, R^2^ = 0.35
+
+General notes about collaboration:
+1. Always save your changes! ALways commit and push your changes! 
+2. Comment your code so that people know what you're doing!
+3. TALK TO YOUR COLLABORATORS!!!
+4. ALWAYS PULL BEFORE YOU START WOKRING IN CODE!!!!!!!

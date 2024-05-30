@@ -13,7 +13,7 @@ library(lterdatasampler) #for data
 library(here) #for file paths 
 ```
 
-Reading in data 
+Reading in data
 
 ```{r}
 
@@ -31,7 +31,8 @@ ggplot(aes(x=latitude,y=size), data=pie_crab)+
   theme_classic()
 ```
 
-Writing model
+#### Writing model
+
 ```{r}
 
 crab_model <- lm(size ~ latitude, # formula: response ~ predictor
@@ -42,3 +43,22 @@ plot(crab_model) # plot diagnostics
 
 ```
 
+#### Model diagnostic plot notes:
+
+qq looks good, homogeneity looks good.
+
+#### Run model and interpret 
+
+```{r}
+summary(crab_model) #look at model output
+```
+
+#### Summarize our Results:
+
+slope: 0.485
+
+y-int: -3.62 +/- 1.27
+
+for each 1 degree increase in latitude, we expect crab size to increase by 0.485 +/- 0.034 mm.
+
+Model Statistics: F(1,390) = 208.5, p \< 0.001, alpha = 0.05, R^2^ = 0.35
